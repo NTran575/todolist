@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    height: 80vh;
+    width: 90%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    
+}
+
+
+.left-half {
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+}
+.left-half h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+.left-half form div {
+    width: 100%;
+}
+.left-half form input {
+    min-width: 75%;
+    max-width: 75%;
+    padding: 1.125em;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: #1d1160;
+    color: white;
+}
+.left-half form button {
+    padding: 1em 2em;
+    border-radius: 30px;
+    background: #fff;
+    color: #212121;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.left-half form button:hover{
+    transform: scale(1.05);
+}
+.right-half {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.right-half #tasks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em 0;
+
+}
+.right-half .task {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 1em 1.25em;
+}
+.right-half .task input {
+    padding: .75em;
+    border: none;
+    max-width: 20em;
+    outline: none;
+    
+}
+.right-half .task .actions {
+    padding: .75em;
+    
+}
+.actions button {
+    padding: .75em;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.right-half::-webkit-scrollbar {
+    width: 12px;
+    scrollbar-color: black;
+    border-radius: 10px;
+    
+}
+.right-half::-webkit-scrollbar-thumb{
+    background: silver;
+    border-radius: 10px;
+}
+
+.right-half::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
